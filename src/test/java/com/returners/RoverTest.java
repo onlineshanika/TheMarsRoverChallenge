@@ -12,13 +12,10 @@ public class RoverTest {
 
     @Test
     public void basicFlowWithoutAnyExceptions() {
-        Rover rover = new Rover(0, 0, 'N');
-        String commands = "LMLMLMLMM";
-        for (char command : commands.toCharArray()) {
-            rover.move(command);
-        }
-
-         assertEquals("0 1 N", rover.getPosition());
+        Rover rover = new Rover();
+        rover.initiateRoverMission(0, 0, "N" ,40,10);
+        rover.move("RMMRM");
+        assertEquals("2 0 S", rover.getPosition());
     }
 
 }

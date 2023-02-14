@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e28d6b03-ad22-4b0e-9ce6-bd56b639f50d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/returners/RoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/returners/RoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +40,63 @@
     "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.returners.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Documents" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.returners.model" />
+    </key>
+  </component>
   <component name="RunManager" selected="JUnit.RoverTest.basicFlowWithoutAnyExceptions">
+    <configuration name="RoverMission" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.returners.view.RoverMission" />
+      <module name="TheMarsRoverChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.returners.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlateauTest.basicFlowWithoutAnyExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheMarsRoverChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.returners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.returners" />
+      <option name="MAIN_CLASS_NAME" value="com.returners.PlateauTest" />
+      <option name="METHOD_NAME" value="basicFlowWithoutAnyExceptions" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlateauTest.getAllObstacles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TheMarsRoverChallenge" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.returners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.returners" />
+      <option name="MAIN_CLASS_NAME" value="com.returners.PlateauTest" />
+      <option name="METHOD_NAME" value="getAllObstacles" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RoverTest.basicFlowWithoutAnyExceptions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheMarsRoverChallenge" />
       <extension name="coverage">
@@ -74,6 +132,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RoverTest.basicFlowWithoutAnyExceptions" />
+        <item itemvalue="JUnit.PlateauTest.getAllObstacles" />
+        <item itemvalue="JUnit.PlateauTest.basicFlowWithoutAnyExceptions" />
+        <item itemvalue="Application.RoverMission" />
         <item itemvalue="JUnit.RoverTest.checkGetDateTimeWhenDateIsSpecified" />
       </list>
     </recent_temporary>
@@ -99,5 +160,41 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/returners/model/Plateau.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/returners/model/Plateau.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/returners/model/Plateau.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
+          <line>159</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
