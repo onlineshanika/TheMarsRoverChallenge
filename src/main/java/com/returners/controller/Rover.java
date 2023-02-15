@@ -38,7 +38,7 @@ public class Rover {
             this.direction = Direction.S;
         } else if (this.direction == Direction.S) {
             this.direction = Direction.W;
-        }else if (this.direction == Direction.W) {
+        } else if (this.direction == Direction.W) {
             this.direction = Direction.N;
         }
     }
@@ -58,13 +58,13 @@ public class Rover {
     }
 
     private void moveForward() {
-        if (this.direction == Direction.N && isValidCoordinate(xCoordinate, yCoordinate + 1) && detectObstacle( xCoordinate,yCoordinate + 1)) {
+        if (this.direction == Direction.N && isValidCoordinate(xCoordinate, yCoordinate + 1) && detectObstacle(xCoordinate, yCoordinate + 1)) {
             this.yCoordinate++;
         } else if (this.direction == Direction.E && isValidCoordinate(xCoordinate + 1, yCoordinate) && detectObstacle(xCoordinate + 1, yCoordinate)) {
             this.xCoordinate++;
-        } else if (this.direction == Direction.S && isValidCoordinate(xCoordinate, yCoordinate - 1)&& detectObstacle(xCoordinate, yCoordinate - 1)) {
+        } else if (this.direction == Direction.S && isValidCoordinate(xCoordinate, yCoordinate - 1) && detectObstacle(xCoordinate, yCoordinate - 1)) {
             this.yCoordinate--;
-        } else if (this.direction == Direction.W && isValidCoordinate(xCoordinate - 1, yCoordinate)&& detectObstacle(xCoordinate - 1, yCoordinate)) {
+        } else if (this.direction == Direction.W && isValidCoordinate(xCoordinate - 1, yCoordinate) && detectObstacle(xCoordinate - 1, yCoordinate)) {
             this.xCoordinate--;
         } else {
             makeErrorSound();
@@ -153,7 +153,6 @@ public class Rover {
             }
         }
     }
-
 
     private boolean isValidCoordinate(int newX, int newY) {
         return ((newX >= 0 && newY >= 0)
