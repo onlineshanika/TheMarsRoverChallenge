@@ -33,13 +33,12 @@ public class Rover {
     private void turnLeft() {
 
         if (this.direction == Direction.N) {
-            this.direction = Direction.W;
-        } else if (this.direction == Direction.W) {
+            this.direction = Direction.E;
+        } else if (this.direction == Direction.E) {
             this.direction = Direction.S;
         } else if (this.direction == Direction.S) {
-            this.direction = Direction.E;
-        }
-        if (this.direction == Direction.E) {
+            this.direction = Direction.W;
+        }else if (this.direction == Direction.W) {
             this.direction = Direction.N;
         }
     }
@@ -47,12 +46,12 @@ public class Rover {
     private void turnRight() {
 
         if (this.direction == Direction.N) {
-            this.direction = Direction.E;
-        } else if (this.direction == Direction.E) {
-            this.direction = Direction.S;
-        } else if (this.direction == Direction.S) {
             this.direction = Direction.W;
         } else if (this.direction == Direction.W) {
+            this.direction = Direction.S;
+        } else if (this.direction == Direction.S) {
+            this.direction = Direction.E;
+        } else if (this.direction == Direction.E) {
             this.direction = Direction.N;
         }
 

@@ -38,7 +38,7 @@ public class RoverMission {
         System.out.print("Enter coordinate : ");
         coordinates = scanner.nextLine();
         if (isValidInputCoordinates(coordinates)) {
-            System.out.println("Initial coordinates: " + coordinates);
+//            System.out.println("Initial coordinates: " + coordinates);
         } else {
             System.out.println(" Invalid input !!! ");
             getInitialRoverCoordinates(scanner);
@@ -47,11 +47,11 @@ public class RoverMission {
 
 
     private static void getRoverMovements(Scanner scanner) {
-        System.out.print("Enter Movement commands(): ");
+        System.out.print("Enter Movement commands : ");
         commands = scanner.nextLine();
 
         if (isValidInputMovements(commands)) {
-            System.out.println("Movement Rules: " + commands);
+//            System.out.println("Movement Rules: " + commands);
         } else {
             System.out.println(" Invalid input !!! ");
             getRoverMovements(scanner);
