@@ -11,8 +11,7 @@ public class PlateauTest {
     @Test
     public void getAllObstacles() {
         Plateau plateau = new Plateau();
-//        plateau.loadObstacles();
-        assertEquals("4 5,2 3",plateau.loadObstacles() );
+         assertEquals(2,plateau.loadObstacles() );
     }
 }
 

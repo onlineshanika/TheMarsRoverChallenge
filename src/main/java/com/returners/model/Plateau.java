@@ -30,7 +30,7 @@ public class Plateau {
     }
 
 
-    public String loadObstacles() {
+    public int loadObstacles() {
 
         try (InputStream input = Plateau.class.getClassLoader().getResourceAsStream("rover.properties")) {
 
@@ -38,7 +38,7 @@ public class Plateau {
 
             if (input == null) {
                 System.out.println("Sorry, unable to find rover.properties");
-                return "";
+                return 0;
             }
 
             //load a properties file from class path, inside static method
@@ -58,6 +58,6 @@ public class Plateau {
             ex.printStackTrace();
         }
 
-        return "4 5,2 3";
+        return this.obstacles.size();
     }
 }

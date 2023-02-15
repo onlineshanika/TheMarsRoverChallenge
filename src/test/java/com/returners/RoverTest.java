@@ -28,6 +28,6 @@ public class RoverTest {
         rover.move("MMRMMRMRRM");
         assertEquals("6 5 E", rover.getPosition());
     }
-    
+
 
 }

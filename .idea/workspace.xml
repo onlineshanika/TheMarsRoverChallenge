@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e28d6b03-ad22-4b0e-9ce6-bd56b639f50d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/returners/view/RoverMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/returners/view/RoverMission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/returners/model/Plateau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/returners/model/Plateau.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/returners/PlateauTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/returners/PlateauTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/returners/RoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/returners/RoverTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +51,7 @@
       <recent name="com.returners.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RoverTest.basicFlowWithoutAnyExceptions">
+  <component name="RunManager" selected="JUnit.PlateauTest.getAllObstacles">
     <configuration name="RoverMission" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.returners.view.RoverMission" />
       <module name="TheMarsRoverChallenge" />
@@ -133,9 +131,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlateauTest.getAllObstacles" />
         <item itemvalue="JUnit.RoverTest.basicFlowWithoutAnyExceptions" />
         <item itemvalue="Application.RoverMission" />
-        <item itemvalue="JUnit.PlateauTest.getAllObstacles" />
         <item itemvalue="JUnit.PlateauTest.basicFlowWithoutAnyExceptions" />
         <item itemvalue="JUnit.RoverTest.checkGetDateTimeWhenDateIsSpecified" />
       </list>
