@@ -1,6 +1,7 @@
 package com.returners.view;
 
 import com.returners.controller.Rover;
+import com.returners.exception.OutOfPlateauException;
 import com.returners.model.Plateau;
 
 import java.util.Scanner;
@@ -9,6 +10,8 @@ public class RoverMission {
 
     private static String coordinates = null;
     private static String commands = null;
+    private static final String INPUT_COORDINATES = "^(0|[1-9]\\d*) (0|[1-9]\\d*) (N|S|E|W)$";
+    private static final String INPUT_MOVEMENTS = "^[RLM]+$";
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,15 +25,19 @@ public class RoverMission {
         Rover rover = new Rover();
 
         rover.initiateRoverMission(Integer.parseInt(result[0]), Integer.parseInt(result[1]), result[2] ,40,40);
-        rover.move(commands);
+        try {
+            rover.move(commands);
+        } catch (OutOfPlateauException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private static boolean isValidInputCoordinates(String input) {
-        return (input.matches("^(0|[1-9]\\d*) (0|[1-9]\\d*) (N|S|E|W)$"));
+        return (input.matches(INPUT_COORDINATES));
     }
 
     private static boolean isValidInputMovements(String input) {
-        return (input.matches("^[RLM]+$"));
+        return (input.matches(INPUT_MOVEMENTS));
     }
 
     private static void getInitialRoverCoordinates(Scanner scanner) {

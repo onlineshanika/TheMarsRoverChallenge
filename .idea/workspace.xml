@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e28d6b03-ad22-4b0e-9ce6-bd56b639f50d" name="Changes" comment="" />
+    <list default="true" id="e28d6b03-ad22-4b0e-9ce6-bd56b639f50d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/returners/view/RoverMission.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/returners/view/RoverMission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/returners/RoverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/returners/RoverTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -23,19 +29,26 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2Lgj1Anc3GhNvI4SFeYPoxCZcEE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.returners.controller" />
@@ -47,7 +60,7 @@
       <recent name="com.returners.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RoverMission">
+  <component name="RunManager" selected="JUnit.RoverTest.roverOutOfPlateau">
     <configuration name="RoverMission" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.returners.view.RoverMission" />
       <module name="TheMarsRoverChallenge" />
@@ -65,7 +78,7 @@
       <module name="TheMarsRoverChallenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.returners.*" />
+          <option name="PATTERN" value="com.returners.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,7 +94,7 @@
       <module name="TheMarsRoverChallenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.returners.*" />
+          <option name="PATTERN" value="com.returners.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,7 +110,7 @@
       <module name="TheMarsRoverChallenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.returners.*" />
+          <option name="PATTERN" value="com.returners.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,17 +122,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RoverTest.checkGetDateTimeWhenDateIsSpecified" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RoverTest.roverOutOfPlateau" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TheMarsRoverChallenge" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.returners.*" />
+          <option name="PATTERN" value="com.returners.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.returners" />
       <option name="MAIN_CLASS_NAME" value="com.returners.RoverTest" />
-      <option name="METHOD_NAME" value="checkGetDateTimeWhenDateIsSpecified" />
+      <option name="METHOD_NAME" value="roverOutOfPlateau" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -127,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RoverTest.roverOutOfPlateau" />
         <item itemvalue="Application.RoverMission" />
         <item itemvalue="JUnit.PlateauTest.getAllObstacles" />
         <item itemvalue="JUnit.RoverTest.basicFlowWithoutAnyExceptions" />
         <item itemvalue="JUnit.PlateauTest.basicFlowWithoutAnyExceptions" />
-        <item itemvalue="JUnit.RoverTest.checkGetDateTimeWhenDateIsSpecified" />
       </list>
     </recent_temporary>
   </component>
@@ -162,12 +175,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
-          <line>23</line>
+          <line>25</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
-          <line>47</line>
+          <line>49</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -187,12 +200,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
-          <line>157</line>
+          <line>159</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/returners/controller/Rover.java</url>
-          <line>35</line>
+          <line>37</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>

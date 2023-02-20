@@ -1,8 +1,10 @@
 package com.returners.controller;
 
+import com.returners.exception.OutOfPlateauException;
 import com.returners.model.Obstacle;
 import com.returners.model.Plateau;
 import com.returners.model.Rectangle;
+import com.returners.util.Message;
 
 public class Rover {
 
@@ -20,7 +22,7 @@ public class Rover {
     public Rover() {
     }
 
-    private void move(Direction direction) {
+    private void move(Direction direction) throws OutOfPlateauException {
         if (direction == Direction.L) {
             turnLeft();
         } else if (direction == Direction.R) {
@@ -57,7 +59,7 @@ public class Rover {
 
     }
 
-    private void moveForward() {
+    private void moveForward() throws OutOfPlateauException {
         if (this.direction == Direction.N && isValidCoordinate(xCoordinate, yCoordinate + 1) && detectObstacle(xCoordinate, yCoordinate + 1)) {
             this.yCoordinate++;
         } else if (this.direction == Direction.E && isValidCoordinate(xCoordinate + 1, yCoordinate) && detectObstacle(xCoordinate + 1, yCoordinate)) {
@@ -143,7 +145,7 @@ public class Rover {
 
     }
 
-    public void move(String inputs) {
+    public void move(String inputs) throws OutOfPlateauException {
         if (inputs != null && !inputs.trim().isEmpty()) {
             inputs = inputs.toUpperCase().trim();
             char[] commands = inputs.toCharArray();
@@ -154,13 +156,17 @@ public class Rover {
         }
     }
 
-    private boolean isValidCoordinate(int newX, int newY) {
-        return ((newX >= 0 && newY >= 0)
-                && (this.plateau.getShape().getHeight() >= newY && this.plateau.getShape().getWidth() >= newX));
+    private boolean isValidCoordinate(int newX, int newY) throws OutOfPlateauException {
+        if ((newX >= 0 && newY >= 0)
+                && (this.plateau.getShape().getHeight() >= newY && this.plateau.getShape().getWidth() >= newX)) {
+            return true;
+        }else {
+            throw new OutOfPlateauException(Message.ROVER_OUT_OF_RANGE);
+        }
 
     }
 
-    private void makeErrorSound() {
+    private void makeErrorSound() throws OutOfPlateauException {
         int beepCount = 3;
         for (int i = 0; i < beepCount; ++i) {
             System.out.println("Beep : " + i);
@@ -172,7 +178,7 @@ public class Rover {
 
             }
         }
-
+        throw new OutOfPlateauException(Message.ROVER_OUT_OF_RANGE);
     }
 
 
